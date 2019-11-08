@@ -1,6 +1,9 @@
 // Home Content
 
 .home {
+  header img{
+    width: 100%;
+  }
 
   .intro {
 
@@ -24,6 +27,13 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @phone{
+      img.blast{
+        width: 100%;
+      }
+      img.sky{ display: none; }
+      img.launch{ display: none; }
     }
   }
 
@@ -57,9 +67,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      div.btn{
+        .button(25%, 2%, @btn-bg-color);
+        &:hover {
+          background: gray;
+          color: @btn-bg-color;
+        }
+        
       }
     }
+  }
+ 
 
     .walk-img {
       width: 46%;
@@ -72,4 +90,4 @@
       }
     }
   }
-}// home
+// home
