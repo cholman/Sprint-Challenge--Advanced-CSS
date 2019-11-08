@@ -50,6 +50,18 @@
   }
 
   .walk {
+    @media @phone{
+      flex-direction: column-reverse;
+      padding: 3%;
+      div.walk-text{
+        width: 100%;
+      }
+      div.walk-img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -73,7 +85,10 @@
           background: gray;
           color: @btn-bg-color;
         }
-        
+        @media @phone{
+          width: 100%;
+          padding: 5%;
+        }
       }
     }
   }
