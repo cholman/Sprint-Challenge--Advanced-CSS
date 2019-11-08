@@ -187,7 +187,7 @@ div.nav nav {
 }
 div.nav nav a {
   text-decoration: none;
-  color: black;
+  color: #23293B;
   font-family: "Ubuntu";
   font-size: 1.6rem;
   font-weight: bold;
@@ -211,6 +211,25 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+html {
+  background: white;
+  animation-name: space;
+  animation-duration: 20s;
+}
+@keyframes space {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
 }
 .home header img {
   width: 100%;
