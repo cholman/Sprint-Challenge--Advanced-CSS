@@ -3,6 +3,7 @@
 .home {
   header img{
     width: 100%;
+    border-radius: 5px;
   }
 
   .intro {
@@ -32,8 +33,8 @@
       img.blast{
         width: 100%;
       }
-      img.sky{ display: none; }
-      img.launch{ display: none; }
+      img.sky{ .hide(); }
+      img.launch{ .hide(); }
     }
   }
 
@@ -51,6 +52,7 @@
 
   .walk {
     @media @phone{
+      .column();
       flex-direction: column-reverse;
       padding: 3%;
       div.walk-text{

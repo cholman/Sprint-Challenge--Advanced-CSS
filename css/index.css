@@ -3,6 +3,9 @@
   flex-direction: column;
   width: 100%;
 }
+.hide {
+  display: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,7 +175,8 @@ div.nav {
   align-items: center;
 }
 div.nav h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin: 1% 0;
 }
 div.nav nav {
   display: flex;
@@ -186,6 +190,7 @@ div.nav nav a {
   color: black;
   font-family: "Ubuntu";
   font-size: 1.6rem;
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   div.nav {
@@ -209,6 +214,7 @@ footer {
 }
 .home header img {
   width: 100%;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -256,6 +262,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     flex-direction: column-reverse;
     padding: 3%;
   }
@@ -281,6 +290,7 @@ footer {
   background: #22283A;
   padding: 2%;
   width: 25%;
+  min-width: 100px;
   text-align: center;
   color: white;
   font-size: 1.6rem;
